@@ -1,0 +1,10 @@
+{
+	"angle": 28.0,
+	"axiom": "x",
+	"decay": 1.0,
+	"iterations": 6.0,
+	"rules": {
+		"f": "ff",
+		"x": "f[-x]f[+x]-x"
+	}
+}

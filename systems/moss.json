@@ -1,0 +1,1 @@
+{"angle":30.0,"axiom":"f","decay":1.0,"iterations":5.0,"rules":{"f":"f[-f]f[+f][f]"}}

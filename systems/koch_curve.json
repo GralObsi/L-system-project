@@ -1,0 +1,9 @@
+{
+	"axiom": "f",
+	"rules": {
+		"f": "f+f-f-f+f"
+	},
+	"iterations": 4.0,
+	"angle": 90.0,
+	"decay": 1.0
+}
