@@ -9,20 +9,16 @@ void LineParser::parse(std::string line) {
 	int curLayer = 1;
 	bool isRand = false;
 	for(int unsigned i = 0; i < line.size(); i++) {
+		bool r = isRand;
+		isRand = false;
 		char command = line[i];
 		switch(command) {
 			case '+':
-				if(isRand) {
-					turtle->rotate(getRandFloat(std::min(0.0f, angle), std::max(0.0f, angle)));
-					isRand = false;
-				}
+				if(r) turtle->rotate(getRandFloat(std::min(0.0f, angle), std::max(0.0f, angle)));
 				else turtle->rotate(angle);
 				break;
 			case '-':
-				if(isRand) {
-					turtle->rotate(-getRandFloat(std::min(0.0f, angle), std::max(0.0f, angle)));
-					isRand = false;
-				}
+				if(r) turtle->rotate(-getRandFloat(std::min(0.0f, angle), std::max(0.0f, angle)));
 				else turtle->rotate(-angle);
 				break;
 			case '[':
